@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <Arduino_GFX_Library.h>
-#include <lvgl.h>
+#include <Lvgl.h>
 // #include "Widget/Arc.cpp"
 // #include "Widget/Button.cpp"
 // #include "Widget/Button_matrix.c+pp"
