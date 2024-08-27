@@ -222,19 +222,19 @@ static lv_fs_res_t fs_tell(lv_fs_drv_t * drv, void * file_p, uint32_t * pos_p)
  * @param path path to a directory
  * @return pointer to an initialized 'DIR' variable
  */
-// static void * fs_dir_open(lv_fs_drv_t * drv, const char * path)
-// {
-//     LV_UNUSED(drv);
-//     FF_DIR * d = lv_mem_alloc(sizeof(FF_DIR));
-//     if(d == NULL) return NULL;
+static void * fs_dir_open(lv_fs_drv_t * drv, const char * path)
+{
+    LV_UNUSED(drv);
+    FF_DIR * d = lv_mem_alloc(sizeof(FF_DIR));
+    if(d == NULL) return NULL;
 
-//     FRESULT res = f_opendir(d, path);
-//     if(res != FR_OK) {
-//         lv_mem_free(d);
-//         d = NULL;
-//     }
-//     return d;
-// }
+    FRESULT res = f_opendir(d, path);
+    if(res != FR_OK) {
+        lv_mem_free(d);
+        d = NULL;
+    }
+    return d;
+}
 
 /**
  * Read the next filename from a directory.
