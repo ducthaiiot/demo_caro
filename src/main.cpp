@@ -36,7 +36,7 @@
 
 #include "demo_caro.h"
 
-_sửa code_
+
 
 
 // #define MQTT_AUTH_USER ""
