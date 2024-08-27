@@ -36,7 +36,7 @@
 
 #include "demo_caro.h"
 
-
+_sửa code_
 
 
 // #define MQTT_AUTH_USER ""
@@ -135,7 +135,7 @@ void my_touchpad_read(lv_indev_drv_t *indev_driver, lv_indev_data_t *data)
   }
 }
 
-èawefwaefwef
+
 
 void setup()
 {
